@@ -1,0 +1,166 @@
+{ tabs: [
+	{id: "tab_principal", text: "Principal", active: true, items: [
+		{id: "block_inst", type: "block", text: "Institucion", list: [
+			{id: "open_inst1", type: "button", text: "Ver Institucion", isbig: true, img: "48/menprincip.png"},
+			{id: "open_inst2", type: "button", text: "Editar", img: "18/modif.png"},
+			{id: "open_inst3", type: "button", text: "Autoridad", img: "18/usuarioautor.png"},
+			{id: "open_inst4", type: "button", text: "Delegado", img: "18/usuarioautordelegado.png"}
+		]},
+		{id: "block_departamen", type: "block", text: "Departamentos", list: [
+			{id: "open_departamen1", type: "button", text: "Ver Departamentos", isbig: true, img: "48/departamentbtn.png"},
+			{id: "open_departamen2", type: "button", text: "Personal", img: "18/usuario.png"},
+			{id: "open_departamen3", type: "button", text: "Proyectos", img: "18/application_cascade.png"},
+			{id: "open_departamen4", type: "button", text: "Aplicaciones", img: "18/ganntdiag.png"}
+		]},
+		{id: "block_personal", type: "block", text: "Personal Tecnico", list: [
+			{id: "open_personal1", type: "button", text: "Ver Personal", isbig: true, img: "48/user.png"},
+			{id: "open_personal2", type: "button", text: "Permisos", img: "18/permisosuser.png"},
+			{id: "open_personal3", type: "button", text: "Tipo Usuarios", img: "18/tareasuser.png"},
+			{id: "open_personal4", type: "button", text: "Tipo Cargos", img: "18/documentosfre.png"}
+		]}
+	]},
+	{id: "tab_gestdocs", text: "Gestion Documental", active: false, items: [
+		{id: "block_gestdocs", type: "block", text: "Documentos Recibidos", list: [
+			{id: "open_gestdocs1", type: "button", text: "Buzon Entrada", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_gestdocs2", type: "button", text: "Nuevo", img: "18/plantillaofice.png"},
+			{id: "open_gestdocs3", type: "button", text: "Pendientes", img: "18/application_cascade.png"},
+			{id: "open_gestdocs4", type: "button", text: "Despachados", img: "18/undo.gif"}
+		]},
+		{id: "block_gestmensajer", type: "block", text: "Menu Documentación", list: [
+			{id: "open_gestmens1", type: "button", text: "En Elaboración", isbig: true, img: "48/mensajesbtnelab.png"},
+			{id: "open_gestmens2", type: "button", text: "Eliminados", isbig: true, img: "48/mensajesbtnelim.png"},
+			{id: "open_gestmens3", type: "button", text: "No Enviados", isbig: true, img: "48/mensajesbtnnoenviados.png"},
+			{id: "open_gestmens4", type: "button", text: "Enviados", isbig: true, img: "48/mensajesbtnenviados.png"},
+			{id: "open_gestmens5", type: "button", text: "Reasignados", isbig: true, img: "48/mensajesbtnreasign.png"},
+			{id: "open_gestmens6", type: "button", text: "Archivados", isbig: true, img: "48/download.gif"},
+			{id: "open_gestmens7", type: "button", text: "Informados", isbig: true, img: "48/mensajesbtninformads.png"}
+			
+		]},
+		{id: "block_busquedas", type: "block", text: "Busquedas", list: [
+			{id: "open_busqued1", type: "button", text: "Buscar", isbig: true, img: "48/buscar.png"},
+			{id: "open_busqued2", type: "button", text: "Nuevo", img: "18/new.gif"},
+			{id: "open_busqued3", type: "button", text: "Editar", img: "18/page_setup.gif"},
+			{id: "open_busqued4", type: "button", text: "Eliminar", img: "18/close.gif"}
+		]}
+		
+	]},
+	{id: "tab_planificacion", text: "Planificacion y Gestion de Proyectos", items: [
+	    {id: "block_planifobj", type: "block", text: "Articulacion Planificacion", list: [
+			{id: "open_planif1", type: "buttonSelect", text: "Articulacion", isbig: true, img: "48/objetivosbtn.png", items:[
+			{id: "open_planif11", text: "Articulacion", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Plan de Trabajo", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif12", text: "PNBV", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif13", text: "PDOT", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Objetivos", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif15", text: "Politicas", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif16", text: "Lineamientos", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif17", text: "Metas", img: "18/open.gif", hotkey: "Ctrl+O"}
+			]
+			
+			},
+			{id: "open_planif2", type: "button", text: "Plan de Trabajo", img: "18/plantillaofice.png"},
+			{id: "open_planif3", type: "button", text: "PNBV", img: "18/application_cascade.png"},
+			{id: "open_planif4", type: "button", text: "PDOT", img: "18/undo.gif"}
+		]},
+		{id: "block_planifprog", type: "block", text: "Plan cuatrianual", list: [
+			{id: "open_planif1", type: "buttonSelect", text: "Plan Cuatrianual", isbig: true, img: "48/objetivosbtn.png", items:[
+			{id: "open_planif11", text: "Plan Cuatrianual", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Programas", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif12", text: "Indicadores", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif13", text: "Metas", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Presupuesto", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif15", text: "Cronograma", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif16", text: "Marco Logico", img: "18/open.gif", hotkey: "Ctrl+O"}
+			]
+			
+			},
+			{id: "open_planif6", type: "button", text: "Marco Logico", img: "18/plantillaofice.png"},
+			{id: "open_planif7", type: "button", text: "Programa", img: "18/application_cascade.png"},
+			{id: "open_planif8", type: "button", text: "Matriz", img: "18/undo.gif"}
+		]},
+		{id: "block_planifproy", type: "block", text: "POA", list: [
+			{id: "open_planif9", type: "button", text: "POA", isbig: true, img: "48/proyectosicon.png", items:[
+			{id: "open_planif11", text: "Proyectos", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Marco Logico", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif12", text: "Formato Proyectos", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif13", text: "Priorizacion", img: "18/open.gif", hotkey: "Ctrl+O"},
+			{id: "open_planif14", text: "Presupuesto", img: "18/open.gif", hotkey: "Ctrl+O"}
+			]
+			
+			},
+			{id: "open_planif10", type: "button", text: "Proyectos", img: "18/pencil_ruler.png"},
+			{id: "open_planif11", type: "button", text: "Marco Logico", img: "18/proysenprogreso.png"},
+			{id: "open_planif12", type: "button", text: "Priorizacion", img: "18/proyterminados.png"}
+		]},
+		{id: "block_planifpac", type: "block", text: "Programacion de Actividades", list: [
+			{id: "open_planif17", type: "button", text: "PAC", isbig: true, img: "48/pacbtn.png"},
+			{id: "open_planif18", type: "button", text: "Movilizacion", isbig: true, img: "48/POABTN.png"},
+			{id: "open_planif19", type: "button", text: "Grafica Gannt", isbig: true, img: "48/chart_gantt.png"},
+			{id: "open_planif20", type: "button", text: "Calendario", isbig: true, img: "48/calendariobtn.png"}
+		]}
+	]},
+	{id: "tab_ejecucionseguim", text: "Financiero", items: [
+	    {id: "block_ejecobj", type: "block", text: "Objetivos Planificados", list: [
+			{id: "open_ejecu1", type: "button", text: "Objetivos", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu2", type: "button", text: "PNBV", img: "18/plantillaofice.png"},
+			{id: "open_ejecu3", type: "button", text: "PDOT", img: "18/application_cascade.png"},
+			{id: "open_ejecu4", type: "button", text: "Institucion", img: "18/undo.gif"}
+		]},
+		{id: "block_ejecprog", type: "block", text: "Programas Planificados", list: [
+			{id: "open_ejecu5", type: "button", text: "Programas", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu6", type: "button", text: "PNBV", img: "18/plantillaofice.png"},
+			{id: "open_ejecu7", type: "button", text: "PDOT", img: "18/application_cascade.png"},
+			{id: "open_ejecu8", type: "button", text: "Institucion", img: "18/undo.gif"}
+		]},
+		{id: "block_ejecproy", type: "block", text: "Gestion de Proyectos", list: [
+			{id: "open_ejecu9", type: "button", text: "Proyectos", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu10", type: "button", text: "Planificados", img: "18/plantillaofice.png"},
+			{id: "open_ejecu11", type: "button", text: "En Progreso", img: "18/application_cascade.png"},
+			{id: "open_ejecu12", type: "button", text: "Terminados", img: "18/undo.gif"}
+		]},
+		{id: "block_ejectarea", type: "block", text: "Actividades del Proyecto", list: [
+			{id: "open_ejecu13", type: "button", text: "Tareas", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu14", type: "button", text: "Nueva", img: "18/plantillaofice.png"},
+			{id: "open_ejecu15", type: "button", text: "Editar", img: "18/application_cascade.png"},
+			{id: "open_ejecu16", type: "button", text: "Buscar", img: "18/undo.gif"}
+		]},
+		{id: "block_ejecpac", type: "block", text: "Plan Operativo Anual y PAC", list: [
+			{id: "open_ejecu17", type: "button", text: "POA", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu18", type: "button", text: "PAC", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_ejecu19", type: "button", text: "Busquedas", isbig: true, img: "48/mensajesbtnb.png"}
+		]}
+		
+	]},
+	{id: "tab_evaluacionseg", text: "Seguimiento y Evaluacion", items: [
+	    {id: "block_evalobj", type: "block", text: "Objetivos Planificados", list: [
+			{id: "open_eval1", type: "button", text: "Objetivos", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval2", type: "button", text: "PNBV", img: "18/plantillaofice.png"},
+			{id: "open_eval3", type: "button", text: "PDOT", img: "18/application_cascade.png"},
+			{id: "open_eval4", type: "button", text: "Institucion", img: "18/undo.gif"}
+		]},
+		{id: "block_evalprog", type: "block", text: "Programas Planificados", list: [
+			{id: "open_eval5", type: "button", text: "Programas", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval6", type: "button", text: "PNBV", img: "18/plantillaofice.png"},
+			{id: "open_eval7", type: "button", text: "PDOT", img: "18/application_cascade.png"},
+			{id: "open_eval8", type: "button", text: "Institucion", img: "18/undo.gif"}
+		]},
+		{id: "block_evalproy", type: "block", text: "Gestion de Proyectos", list: [
+			{id: "open_eval9", type: "button", text: "Proyectos", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval10", type: "button", text: "Planificados", img: "18/plantillaofice.png"},
+			{id: "open_eval11", type: "button", text: "En Progreso", img: "18/application_cascade.png"},
+			{id: "open_eval12", type: "button", text: "Terminados", img: "18/undo.gif"}
+		]},
+		{id: "block_evaltareas", type: "block", text: "Actividades del Proyecto", list: [
+			{id: "open_eval13", type: "button", text: "Tareas", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval14", type: "button", text: "Nueva", img: "18/plantillaofice.png"},
+			{id: "open_eval15", type: "button", text: "Editar", img: "18/application_cascade.png"},
+			{id: "open_eval16", type: "button", text: "Buscar", img: "18/undo.gif"}
+		]},
+		{id: "block_evalpac", type: "block", text: "Plan Operativo Anual y PAC", list: [
+			{id: "open_eval17", type: "button", text: "POA", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval18", type: "button", text: "PAC", isbig: true, img: "48/mensajesbtnb.png"},
+			{id: "open_eval19", type: "button", text: "Busquedas", isbig: true, img: "48/mensajesbtnb.png"}
+		]}
+		
+	]}
+]};

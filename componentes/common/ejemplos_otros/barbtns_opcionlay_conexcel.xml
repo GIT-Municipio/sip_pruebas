@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item id="xbtntotal"   type="button"   img="btn_vistareportotal.png"  imgdis="btn_exportpdf.png"  text="Total"  />
+	<item id="xbtndiario"   type="button"   img="btn_vistarepordiario.png"  imgdis="btn_exportpdf.png"  text="Diario"  />
+	<item id="xbtnfecha" type="buttonInput" value="Fecha" />
+    <item type="text" text="Exportar:"/>
+	<item id="xbtnexcel"   type="button"   img="btn_exportxls.png"  imgdis="btn_exportxls.png"  text="Excel"  />
+	<item id="xbtnpdf"   type="button"   img="btn_exportpdf.png"  imgdis="btn_exportpdf.png"  text="PDF"  />
+</toolbar>

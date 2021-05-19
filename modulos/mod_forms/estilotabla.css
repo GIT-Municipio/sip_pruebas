@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+.Estilo1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#miestiolotab{
+width:773;
+height:357;
+overflow:scroll;
+
+}
+
+
+#nuevotab{
+background-color:#E4E4E4;
+
+}
+
+#consultab{
+background-color:#ffffff;
+font:Arial, Helvetica, sans-serif;
+color:#003366;
+width: 100%;
+font-size:12px;
+}
+
+#consultabdetalle{
+background-color:#ffffff;
+font:Arial, Helvetica, sans-serif;
+color:#003366;
+font-size:12px;
+}
+
+#encabezadotab{
+font:Arial, Helvetica, sans-serif;
+color:#003366;
+font-size:11px;
+background-image:url(imgs/tablasbluetitle.png);
+height: 29px;
+/*background-color:#3557A8; */
+
+}
+
+#encabezadotabdetalle{
+font:Arial, Helvetica, sans-serif;
+color:#003366;
+font-size:12px;
+background-image:url(imagenesiconos/bordetabladetalle.png);
+/*background-color:#3557A8; */
+
+}
+
+
+.Estilotitulos {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #004080; 
+}
+
+.Estiloletras {
+	COLOR: #555555
+}
+
+
+INPUT {
+	COLOR: #003333; BACKGROUND-COLOR: #FBFBFB
+}
+SELECT {
+	COLOR: #003333; BACKGROUND-COLOR:
+	
+}
+
+.boton {
+	background-image:url(imagenesiconos/btnestilo.jpg);
+	color:#003333;
+	text-align: center;
+/*	COLOR:#FFFFFF; BACKGROUND-COLOR: #2799c4*/
+}
+
+/*******************/
+table {
+	border: 0px solid #ccc;
+	text-align: left;
+	/*width: 100%;*/
+}
+
+body {
+    background-color: #FFFFFF;
+    /*color: #004080;*/
+    font-family: Arial;
+    font-size: 12px;
+  }
+  .bd {
+    background-color: #FFFFFF;
+    color: #004080;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  .tbl {
+    background-color: #FFFFFF;
+  }
+  a:link { 
+    color: #FF0000;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  a:active { 
+    color: #0000FF;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  a:visited { 
+    color: #800080;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  .hr {
+    background-color: #336699;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  a.hr:link {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  a.hr:active {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  a.hr:visited {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  .dr {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  .sr {
+    background-color: #ebf3ff;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12px;
+  }
+  
+  .sr:hover {
+	background-color:#ccffcc;
+}
+.dr:hover {
+	background-color:#FFEAD5;
+}
+  /********************
+/*   ------------- */

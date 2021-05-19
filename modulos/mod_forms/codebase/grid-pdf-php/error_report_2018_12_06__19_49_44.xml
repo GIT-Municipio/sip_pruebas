@@ -1,0 +1,5 @@
+<rows profile='color'><head><columns><column  width='NaN' align='left' type='dyn' hidden='false' sort='int' color=''><![CDATA[ID]]></column><column  width='NaN' align='left' type='txt' hidden='false' sort='str' color=''><![CDATA[CAMPO_0]]></column><column  width='NaN' align='left' type='edn' hidden='false' sort='int' color=''><![CDATA[CAMPO_1]]></column></columns></head>
+<row><cell><![CDATA[1]]></cell><cell><![CDATA[Ibarra]]></cell><cell><![CDATA[3,00]]></cell></row>
+<row><cell><![CDATA[2]]></cell><cell><![CDATA[Cuanca]]></cell><cell><![CDATA[33,00]]></cell></row>
+<row><cell><![CDATA[3]]></cell><cell><![CDATA[Quito]]></cell><cell><![CDATA[20,00]]></cell></row>
+<row><cell><![CDATA[4]]></cell><cell><![CDATA[carchi]]></cell><cell><![CDATA[15,00]]></cell></row></rows>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Integration with dhtmlxDataView</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="../../../codebase/dhtmlx.css"/>
+	<script src="../../../codebase/dhtmlx.js"></script>
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			background-color: #ebebeb;
+			overflow: hidden;
+		}
+	</style>
+	<script>
+		var myLayout, myDataView, myTabbar;
+		
+		function doOnLoad() {
+			myLayout = new dhtmlXLayoutObject({
+				//parent: "layoutObj",
+				parent: document.body,
+				pattern: "3L",
+				cells: [{id: "a", text: "dhtmlxDataView", width: 410}]
+			});
+			
+			myTabbar = myLayout.cells("a").attachTabbar({
+				tabs: [
+					{ id: "a1", text: "Tab 1", active: true },
+					{ id: "a2", text: "Tab 2" }
+				]
+			});
+			
+			myDataView = myTabbar.tabs("a1").attachDataView({
+				type: {
+					template:"#Package# : #Version#<br/>#Maintainer#",
+					padding: 5,
+					height: 40,
+					width: 170
+				},
+				drag: true,
+				select: true
+			});
+			myDataView.load("../common/dataview.xml");
+
+		}
+	</script>
+</head>
+<body onload="doOnLoad();">
+	<div id="layoutObj"></div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<toolbar>
+	<item id="open"   type="button"   img="btn_nuevodoc.png"  imgdis="btn_nuevodoc.png"  text="Open"  />
+</toolbar>

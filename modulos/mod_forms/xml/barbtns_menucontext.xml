@@ -1,0 +1,4 @@
+<menu id="0">
+<item text="Agregar Nuevo Item" img="arbbtn_nuevonodo.png" id="addbusq"/>
+<item text="Eliminar Item" img="xquitarsel.png" id="deleteobj"/>
+</menu>

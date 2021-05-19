@@ -1,0 +1,5 @@
+<menu id="0">
+<item text="Vista del Documento" img="debug.gif" id="btnvista_doc"/>
+<item text="Configuracion del documento" img="debug.gif" id="btnconfig_doc"/>
+<item text="Eliminar documento" img="cancel.gif" id="btnelim_doc"/>
+</menu>

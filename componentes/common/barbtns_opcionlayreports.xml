@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<toolbar>
+    
+    <item type="text" text="Exportar:"/>
+	<item id="xbtnpdf"   type="button"   img="btn_exportpdf.png"  imgdis="btn_exportpdf.png"  text="PDF"  />
+</toolbar>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<toolbar>
+  
+    <item type="text" text="Acciones:"/>
+	<item id="xbtnnuevoinfo"   type="button"   img="arbbtn_nuevonodo.png"  imgdis="arbbtn_nuevonodo.png"  text="Nuevo Item"  />
+	
+</toolbar>

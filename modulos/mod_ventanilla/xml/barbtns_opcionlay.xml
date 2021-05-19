@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item id="xexpandir"   type="button"   img="arbbtnexp.png"  imgdis="arbbtnexp.png"  text="Expandir"  />
+	<item id="xcolapsar"   type="button"   img="arbbtncolap.png"  imgdis="arbbtncolap.png"  text="Agrupar"  />
+	<item id="xveritem"   type="button"   img="arbbtnexpitem.png"  imgdis="arbbtnexpitem.png"  text="Ver Item"  />
+	<item id="xcerraritem"   type="button"   img="arbbtncolapitem.png"  imgdis="arbbtncolapitem.png"  text="Cerrar Item"  />
+    <item id="sep2"   type="separator"/>
+    <item type="text" text="Buscar:"/>
+	<item id="xbtnbusqtext" type="buttonInput" value="" />
+	<item id="xbtnodotextbuscar"   type="button"   img="buscardep.png"  imgdis="buscardep.png"  text="Buscar"  />
+	<item id="xbtnodoreinibuscar"   type="button"   img="redo.gif"  imgdis="redo.gif"  text="Reiniciar"  />
+	
+
+	
+</toolbar>

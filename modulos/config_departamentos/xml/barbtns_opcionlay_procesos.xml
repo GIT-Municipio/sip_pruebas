@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<toolbar>
+	<item id="xcrearproces"   type="button"   img="itmcampo.png"  imgdis="itmcampo.png"  text="Crear Proceso"  />
+	<item id="sep2"   type="separator"/>
+	<item type="text" text="Exportar:"/>
+	<item id="xbtnexcel"   type="button"   img="btn_exportxls.png"  imgdis="btn_exportxls.png"  text="Excel"  />
+	<item id="xbtnpdf"   type="button"   img="btn_exportpdf.png"  imgdis="btn_exportpdf.png"  text="PDF"  />
+	
+</toolbar>

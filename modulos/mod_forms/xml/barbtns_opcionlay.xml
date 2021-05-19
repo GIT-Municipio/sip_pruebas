@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<toolbar>
+   <item id="xbtnomcampos"   type="button"   img="buscnombres.png"  imgdis="buscnombres.png"  text="Nombres de Campos"  />
+    <item id="sep2"   type="separator"/>
+    <item type="text" text="Acciones:"/>
+	<item id="xbtnnuevoinfo"   type="button"   img="arbbtn_nuevonodo.png"  imgdis="arbbtn_nuevonodo.png"  text="Nuevo Item"  />
+	<item id="xbtnagregacampo"   type="button"   img="xareantes.png"  imgdis="xareantes.png"  text="Agregar Campo"  />
+	<item id="xbtnelimcampo"   type="button"   img="xdesagruplist.png"  imgdis="xdesagruplist.png"  text="Eliminar Campo"  />
+	
+</toolbar>

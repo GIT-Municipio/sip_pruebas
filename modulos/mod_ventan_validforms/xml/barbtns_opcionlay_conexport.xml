@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item id="xdesagrup"   type="button"   img="xdesagruplist.png"  imgdis="xdesagruplist.png"  text="Desagrupar"  />
+    <item id="sep2"   type="separator"/>
+    <item type="text" text="Agrupar por:"/>
+	<item id="xcargoantes"   type="button"   img="xareantes.png"  imgdis="xareantes.png"  text="Por Area Anterior"  />
+	<item id="xcargo"   type="button"   img="xgrupus.png"  imgdis="xgrupus.png"  text="Por Cargo"  />
+	<item id="xroles"   type="button"   img="xrelosimg.png"  imgdis="xrelosimg.png"  text="Por Roles"  />
+	<item id="xdepartam"   type="button"   img="itmcampo.png"  imgdis="itmcampo.png"  text="Por Area Actual"  />
+	<item id="sep2"   type="separator"/>
+	<item type="text" text="Exportar:"/>
+	<item id="xbtnexcel"   type="button"   img="btn_exportxls.png"  imgdis="btn_exportxls.png"  text="Excel"  />
+	<item id="xbtnpdf"   type="button"   img="btn_exportpdf.png"  imgdis="btn_exportpdf.png"  text="PDF"  />
+	
+</toolbar>

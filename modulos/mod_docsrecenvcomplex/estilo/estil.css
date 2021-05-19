@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			background-color: #dce7fa;
+			overflow: hidden;
+			font-family: verdana, arial, helvetica, sans-serif;
+           
+		}
+		
+		
+  a:link { 
+    /*color: #FF0000;*/
+	color: #036;
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration:none;
+  }
+  a:active { 
+    /*color: #0000FF;*/
+    font-family: Arial;
+    font-size: 11px;
+	 text-decoration:none;
+  }
+  a:visited { 
+   /*color: #800080;*/
+    color: #033;
+    font-family: Arial;
+    font-size: 11px;
+	 text-decoration:none;
+  }
+  
+  
+#menulateraldiv:hover{
+background-color:#ecf2ff;
+background:linear-gradient(#fffad0,#f3c767);
+box-shadow: 3px 3px 10px #000;
+border-radius: 10px;
+font-family:inherit;
+font-size: 10px;
+font-weight: bold;
+text-transform: none;
+width: 70px;
+}
+
+#menulateraldivactio{
+background-color:#ecf2ff;
+background:linear-gradient(#fffdfa,#fb7c7c);
+box-shadow: 3px 3px 10px #000;
+border-radius: 10px;
+font-family:inherit;
+font-size: 10px;
+font-weight: bold;
+text-transform: none;
+width: 70px;
+}
+
+
+#menulateraldiv{
+background-color:#ecf2ff;
+background:linear-gradient(#c8dbf9,#edf4fc);
+box-shadow: 3px 3px 8px #000;
+border-radius: 10px;
+font-family:inherit;
+font-size: 10px;
+font-weight: bold;
+text-transform: none;
+width: 60px;
+margin-top: 7px;
+}
+
+#layoutmenusuperderecha{
+	background-color:#e7f1ff;
+	width:100%;
+	height: 100%;
+	font-size: 11px;
+	}
+	
+#layoutmenuizq{
+	background-color:#e7f1ff;
+	width:100%;
+	height: 100%;
+	font-size: 11px;
+	}
+	
+	#estilointerbtn{
+		font-size: 11px;
+		}
+	
+#encabezverfech
+{
+		font-size: 20px;
+		color:#03F;
+}
+#horapag
+{
+		font-size: 25px;
+		color:#F00;
+}
+#menulatdivinfer{
+		background-image: linear-gradient(to bottom, rgba(225,238,255), rgba(199,224,255)); border: 1px solid #a4bed4; height:20px;font-family:Tahoma, Geneva, sans-serif; font-size:11px;color:#000;padding: 0px 0px 0px 0px;margin-bottom: 0px;
+	
+	}
+
+#menuinferiorops{
+	font-size: 11px;
+		color:#F00;
+	}
+	

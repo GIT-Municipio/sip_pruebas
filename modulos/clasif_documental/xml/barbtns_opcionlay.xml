@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item id="xdesagrup"   type="button"   img="xdesagruplist.png"  imgdis="xdesagruplist.png"  text="Desagrupar"  />
+    <item id="sep2"   type="separator"/>
+    <item type="text" text="Agrupar por:"/>
+	<item id="xcargoantes"   type="button"   img="xareantes.png"  imgdis="xareantes.png"  text="Por Gestion"  />
+	<item id="xcargo"   type="button"   img="xareantes.png"  imgdis="xareantes.png"  text="Por Tipo de Archivo"  />
+	<item id="xdepart"   type="button"   img="xareantes.png"  imgdis="xareantes.png"  text="Por Departamento"  />
+	
+
+	
+</toolbar>

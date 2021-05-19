@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{
+	margin:auto;
+	width:800px;
+	height:450px;
+	-webkit-border-radius: 15px 15px;-ms-border-radius: 15px 15px;-moz-border-radius: 15px 15px;
+	border-radius: 15px;
+  /*	background-color: #d1dbe5;*/
+  	background-image:url(../imagenes/fondologinfre.png);
+	background-size: 800px 450px;
+/*	font-family: verdana, arial, helvetica, sans-serif;*/
+
+	
+	}
+	
+body {
+		
+			background-color: #d1dbe5;
+   }
+
+.dhxlist_obj_dhx_skyblue label {
+			color:#000000;
+			font-family:Tahoma;
+			font-size:11px;
+		}
+		
+.dhxlist_obj_dhx_skyblue .dhxlist_txt_textarea, input.dhtmlx_validation_error {
+			border: 1px solid #A4BED4;
+			padding: 1px 0;
+			font-size: 11px;
+			font-family:Tahoma;
+		}
+		
+.btn, span {
+			font-size: 11px;
+			font-family:Tahoma;
+		}
+		
+#loginObj{
+			margin:auto;
+			/*background-color:#FFF;*/
+			color:#036;
+			font-size:10px;
+		    width: 100%;
+			
+			}
+			
+#myForm{
+	background-color:#2493e9;
+}
+
+.class_fondoform {
+background-color:#2493e9;
+}
+
+.login {
+color:#FFF;
+}
+
+.boton_aceptar {
+background-color:#2493e9;
+}
+
+
+.botones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* font-weight: bolder; */
+    /* background-color: #FFAE4a; */
+    background-image: url(../img/btnnuevo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    /* border: thin solid #aaa; */
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px #2b638f, 0px 3px 15px rgba(0,0,0,.4);
+}

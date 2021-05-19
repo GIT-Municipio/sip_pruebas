@@ -1,0 +1,122 @@
+{ tabs: [
+	{id: "tab_principal", text: "Principal", active: true, items: [
+	
+	{id: "block_obteninfo", type: "block", text: "Obtención de Información", list: [
+			{id: "obteninfo_item1", type: "button", text: "Obtención", isbig: true, img: "48/btn_img_scan.png"},
+			{id: "obteninfo_item2", type: "button", text: "Nuevo Grupo", img: "18/btn_img_grupo18.png"},
+			{id: "obteninfo_item3", type: "button", text: "Seleccionar Grupo", img: "18/btn_img_bodega18.png"},
+			{id: "obteninfo_item4", type: "button", text: "Agregar Categoria", img: "18/btn_img_categoria18.png"},
+			{id: "obteninfo_item5", type: "button", text: "Grupos", isbig: true, img: "48/btngrupocarp.png"}
+		]},
+		{id: "block_gestioarch", type: "block", text: "Gestion de Archivos", list: [
+			{id: "gestioarch_item1", type: "button", text: "Oficina", isbig: true, img: "48/btn_img_oficina.png"},
+			{id: "gestioarch_item2", type: "button", text: "General", isbig: true, img: "48/btn_img_general.png"},
+			{id: "gestioarch_item3", type: "button", text: "Pasivo", isbig: true, img: "48/btn_img_pasivo.png"},
+			{id: "gestioarch_item4", type: "button", text: "Historico", isbig: true, img: "48/btn_img_historico.png"},
+			//{id: "gestioarch_item5", type: "button", text: "Digital", isbig: true, img: "48/btn_img_digital.png"}
+		]},
+		/*
+		{id: "block_label1", type: "block", text: "...", list: [
+			{id: "open_estad1", type: "button", text: "Procesados", isbig: true, img: "48/btn_img_procesados.png"}
+		]},
+		*/
+		{id: "block_label2", type: "block", text: "...", list: [
+			{id: "open_estad2", type: "button", text: "Validados", isbig: true, img: "48/btn_img_validado.png"}
+			
+		]},
+		{id: "block_label3", type: "block", text: "...", list: [
+			{id: "open_estad3", type: "button", text: "Prestamos", isbig: true, img: "48/btn_img_prestamos.png"}
+			
+		]},
+		{id: "block_label4", type: "block", text: "...", list: [
+			{id: "open_estad4", type: "button", text: "De Baja", isbig: true, img: "48/btn_img_eliminado.png"}
+			
+		]},
+		
+		{id: "block_label5", type: "block", text: "...", list: [
+			{id: "open_estad5", type: "button", text: "Eliminados", isbig: true, img: "48/papelerarecelim.png"}
+			
+		]},
+		
+		{id: "block_sessusuario", type: "block", text: "Sesion abierta", list: [
+		    {id: "open_sessusu1", type: "button", text: "Usuario",  isbig: true, img: "48/sinfoto.png"},
+			{id: "open_sessusu2", type: "button", text: "Perfil",  img: "18/folder_new.png"},
+			{id: "open_sessusu3", type: "button", text: "Ayuda", img: "18/help.gif"},
+			{id: "open_sessusu4", type: "button", text: "Salir", img: "18/close.gif"}
+		]}
+		
+		
+	]},
+	/*
+	{id: "tab_gestdocs", text: "Gestion Institucional", active: false, items: [
+		{id: "block_inst", type: "block", text: "Institucion", list: [
+			{id: "open_inst1", type: "button", text: "Ver Institucion", isbig: true, img: "48/proyectosicon.png"},
+			{id: "open_inst2", type: "button", text: "Editar", img: "18/modif.png"},
+			{id: "open_inst3", type: "button", text: "Autoridad", img: "18/usuarioautor.png"},
+			{id: "open_inst4", type: "button", text: "Delegado", img: "18/usuarioautordelegado.png"}
+		]},
+		{id: "block_departamen", type: "block", text: "Departamentos", list: [
+			{id: "open_departamen1", type: "button", text: "Ver Departamentos", isbig: true, img: "48/departamentbtn.png"},
+			{id: "open_departamen2", type: "button", text: "Categoria", img: "18/usuario.png"},
+			{id: "open_departamen3", type: "button", text: "Bodega", img: "18/application_cascade.png"},
+			{id: "open_departamen4", type: "button", text: "Estanteria", img: "18/ganntdiag.png"}
+		]},
+		{id: "block_personal", type: "block", text: "Personal Tecnico", list: [
+			{id: "open_personal1", type: "button", text: "Ver Personal", isbig: true, img: "48/user.png"},
+			{id: "open_personal2", type: "button", text: "Titulo", img: "18/permisosuser.png"},
+			{id: "open_personal3", type: "button", text: "Tipo Usuarios", img: "18/tareasuser.png"},
+			{id: "open_personal4", type: "button", text: "Tipo Cargos", img: "18/documentosfre.png"}
+		]},
+		{id: "block_archv", type: "block", text: "Gestion de Archivos", list: [
+			{id: "open_gesarchivs1", type: "button", text: "Ver Explorador Datos", isbig: true, img: "48/archivosbtn.png"},
+		]}
+		
+	]},
+	*/
+	{id: "tab_gestdocbusq", text: "Busquedas", active: false, items: [
+		{id: "block_busqueds1", type: "block", text: "Gestion de Busquedas", list: [
+			{id: "open_busq1", type: "button", text: "Busqueda General", isbig: true, img: "48/btnbusqgen.png"},
+		]},
+		{id: "block_archv", type: "block", text: "Busqueda por Fecha Registro", list: [
+		    {id: "open_busq2alias", type: "button", text: "Seleccione Fecha", img: "18/btn_calendarselfech.png"},
+			{id: "open_busq2", type: "input",  "width": 130 },
+			{id: "open_busq2btn", type: "button", text: "Click Buscar", img: "18/btn_busqfech.png"},
+		]},
+		{id: "block_archvrango", type: "block", text: "Busqueda Rango Fechas Registro", list: [
+			{id: "open_busq3alias", type: "button", text: "Seleccione Rango", img: "18/btn_calenrango.png"},
+			{id: "open_busq3ini", type: "input", text: "Desde", "width": 130 },
+			{id: "open_busq3fin", type: "input", text: "Hasta", "width": 130 },
+			{id: "open_busq3btn", type: "button", text: "Click Buscar", isbig: true, img: "48/btn_busqrangofechas.png"},
+		]},
+		{id: "block_archvemi", type: "block", text: "Busqueda por Fecha Emision", list: [
+		    {id: "open_busq4alias", type: "button", text: "Seleccione Fecha", img: "18/btn_calenfechaemi.png"},
+			{id: "open_busq4", type: "input",  "width": 130 },
+			{id: "open_busq4btn", type: "button", text: "Click Buscar", img: "18/btn_busqfech.png"},
+		]},
+		{id: "block_archvrangemi", type: "block", text: "Busqueda Rango Fechas Emision", list: [
+			{id: "open_busq5alias", type: "button", text: "Seleccione Rango", img: "18/btn_calenrango.png"},
+			{id: "open_busq5ini", type: "input", text: "Desde", "width": 130 },
+			{id: "open_busq5fin", type: "input", text: "Hasta", "width": 130 },
+			{id: "open_busq5btn", type: "button", text: "Click Buscar", isbig: true, img: "48/btn_busqrangofechemi.png"},
+		]}
+		
+	]},
+	{id: "tab_gestdocsreport", text: "Reportes y Estadisticas", active: false, items: [
+		{id: "block_report1", type: "block", text: "Gestion de Reportes y Estadisticas", list: [
+			{id: "open_report1", type: "button", text: "Por Departamento", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report2", type: "button", text: "Por Bodega", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report3", type: "button", text: "Por Estanteria", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report4", type: "button", text: "Por Nivel", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report5", type: "button", text: "Por Categoria", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report6", type: "button", text: "Por Documento", isbig: true, img: "48/btn_img_reportes.png"},
+			//{id: "open_report7", type: "button", text: "Crear Mis Reportes", isbig: true, img: "48/btn_img_misreportes.png"},
+			{id: "open_report8", type: "button", text: "Codificacion General", isbig: true, img: "48/btn_img_impresionlist.png"},
+			{id: "open_report10", type: "button", text: "Codif. Grupos", isbig: true, img: "48/btn_img_impresionlist.png"},
+			{id: "open_report11", type: "button", text: "Codif. Categorias", isbig: true, img: "48/btn_img_impresionlist.png"},
+		]},
+		
+	]}
+	
+	
+	
+]};

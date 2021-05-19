@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<toolbar>
+    <item type="text" text="Ingrese Ubicacion:"/>
+	<item id="xbtnbusqtext" type="buttonInput" value="" />
+	<item id="xbtn_buscarpunto"   type="button"   img="buscardep.png"  imgdis="buscardep.png"  text="Buscar"  />
+	<item id="sep2"   type="separator"/>
+	<item type="text" text="Seleccione Ruta:"/>
+	<item id="sep2"   type="separator"/>
+	<item type="text" text="Desde:"/>
+	<item id="lugardesde" type="buttonSelect" img="debug.gif" text="Select" mode="select"  width="95">
+		<item type="button" id="1" text="Cotacachi" img="itmcampo.png"/>
+		<item type="button" id="2" text="Quiroga" img="itmcampo.png"/>
+		<item type="button" id="3" text="Apuela" img="itmcampo.png"/>
+	</item>
+	<item type="text" text="Hasta:"/>
+	<item id="lugarhasta" type="buttonSelect" img="debug.gif" text="Select" mode="select"  width="95">
+		<item type="button" id="1" text="Otavalo" img="itmcampo.png"/>
+		<item type="button" id="2" text="Pimampiro" img="itmcampo.png"/>
+		<item type="button" id="3" text="Ibarra" img="itmcampo.png"/>
+	</item>
+	<item id="xbtn_buscarruta"   type="button"   img="buscardep.png"  imgdis="buscardep.png"  text="Buscar"  />
+</toolbar>

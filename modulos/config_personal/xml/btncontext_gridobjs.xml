@@ -1,0 +1,7 @@
+<menu id="0">
+<item text="Editar Datos" img="buscnombres.png" id="edit_datos"/>
+<item id="sep1"   type="separator"/>
+<item text="Cambiar Clave" img="xrelosimg.png" id="edit_clave"/>
+<item id="sep2"   type="separator"/>
+<item text="Eliminar Usuario" img="cancel.gif" id="elim_usu"/>
+</menu>

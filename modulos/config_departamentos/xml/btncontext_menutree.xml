@@ -1,0 +1,11 @@
+<menu id="0">
+<item text="Agregar Nuevo Item" img="arbbtn_nuevonodo.png" id="addbusq" />
+ <item id="separacontext1"   type="separator"/>
+<item text="Eliminar Item" img="cancel.gif" id="deletebusq" />
+ <item id="separacontext2"   type="separator"/>
+<item text="Mostrar Procesos" img="galmaps.png" id="mostrarprocs" />
+ <item id="separacontext3"   type="separator"/>
+<item text="Mostrar Personal Asignado" img="xgrupus.png" id="mostrarpersonal" />
+ <item id="separacontext4"   type="separator"/>
+ <item text="Crear Nuevo Nodo" img="open.gif" id="creanodo" />
+</menu>

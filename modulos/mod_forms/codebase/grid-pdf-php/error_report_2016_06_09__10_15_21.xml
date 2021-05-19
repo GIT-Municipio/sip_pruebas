@@ -1,0 +1,6 @@
+<rows profile='color'><head><columns><column  width='NaN' align='left' type='dyn' hidden='false' sort='int' color=''><![CDATA[ID]]></column><column  width='NaN' align='left' type='edn' hidden='false' sort='int' color=''><![CDATA[CEDULA]]></column><column  width='NaN' align='left' type='txt' hidden='false' sort='str' color=''><![CDATA[USUARIOS]]></column><column  width='NaN' align='left' type='edn' hidden='false' sort='int' color=''><![CDATA[EDADES]]></column></columns></head>
+<row><cell><![CDATA[1]]></cell><cell><![CDATA[1,00]]></cell><cell><![CDATA[Fausto]]></cell><cell><![CDATA[32,00]]></cell></row>
+<row><cell><![CDATA[2]]></cell><cell><![CDATA[2,00]]></cell><cell><![CDATA[Liliana]]></cell><cell><![CDATA[15,00]]></cell></row>
+<row><cell><![CDATA[3]]></cell><cell><![CDATA[3,00]]></cell><cell><![CDATA[Marlene]]></cell><cell><![CDATA[16,00]]></cell></row>
+<row><cell><![CDATA[4]]></cell><cell><![CDATA[4,00]]></cell><cell><![CDATA[Jose]]></cell><cell><![CDATA[18,00]]></cell></row>
+<row><cell><![CDATA[6]]></cell><cell><![CDATA[ ]]></cell><cell><![CDATA[ ]]></cell><cell><![CDATA[ ]]></cell></row></rows>
