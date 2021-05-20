@@ -42,7 +42,8 @@ echo "<script>window.open('log/index.php','_parent');</script>";
 			height: 100%;
 			margin: 0px;
 			padding: 0px;
-			background-color: #dce7fa;
+			/* background-color: #dce7fa; -- cambio de color hex a rgb*/ 
+			background-color: rgb(0, 0, 255);
 			overflow: hidden;
 			font-family: verdana, arial, helvetica, sans-serif;
 		}
