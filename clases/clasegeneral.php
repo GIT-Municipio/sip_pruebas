@@ -56,7 +56,8 @@ function actualizarinactivos($tabla,$micamp,$elvec)
      if ($result)
 	 {
 	  session_start();
-    if (session_is_registered("elusuarioadmin"))
+    //if (session_is_registered("elusuarioadmin")) -----cambio por error funcion no disponible en php7
+    if ($_SESSION["elusuarioadmin"] = "elusuarioadmin")
     {
    $elusuario=$_SESSION["elusuarioadmin"];
    
@@ -81,7 +82,8 @@ function actualizarinactivos($tabla,$micamp,$elvec)
 //Numeros de Campos
 function numcampos()
 {
-	return pg_num_fields($_pagi_result);
+	//return pg_numfields($_pagi_result); ----funcion mal definida en el retorno no declarada
+  return pg_numfields($this->result);
 }
 //Numero de Filas
 function numregistros()
@@ -158,7 +160,8 @@ function borrado($tabla="",$campo,$dato)
   if($this->result)
  {
   session_start();
-if (session_is_registered("elusuarioadmin"))
+//if (session_is_registered("elusuarioadmin")) funcion no disponible en PHP 7
+if ($_SESSION["elusuarioadmin"] = "elusuarioadmin")
 {
 //////////verificar dato
    $concatenarcad="";
@@ -211,7 +214,8 @@ function Agregar($tabla ="",$campos="",$valores="")
    $vermio=pg_fetch_result($verisol,$nuevo,0);
 //  
    session_start();
-if (session_is_registered("elusuarioadmin"))
+//if (session_is_registered("elusuarioadmin"))  funcion no disponible en php 7
+if ($_SESSION["elusuarioadmin"] = "elusuarioadmin")
 {
    $elusuario=$_SESSION["elusuarioadmin"];
    
@@ -220,7 +224,8 @@ if (session_is_registered("elusuarioadmin"))
 		 //////////tratamientos
 		 	
 		 $concatenarcad="";
-		 $mivectorins=split("'",$valores);
+		 //$mivectorins=split("'",$valores);   Spli no disponible en PHP 7
+     $mivectorins=preg_split("'",$valores);
 		 for($i=0;$i<count($mivectorins);$i++)
 		 {
 		   if($mivectorins[$i]!="'")
@@ -275,7 +280,8 @@ if (session_is_registered("elusuarioadmin"))
      if ($result)
 	 {
 	  session_start();
-    if (session_is_registered("elusuarioadmin"))
+    //if (session_is_registered("elusuarioadmin"))  funcion no disponible en PHP 7
+    if ($_SESSION["elusuarioadmin"] = "elusuarioadmin")
     {
    $elusuario=$_SESSION["elusuarioadmin"];
    
