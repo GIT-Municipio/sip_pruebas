@@ -1,0 +1,97 @@
+{ 
+
+tabs: [
+
+    {id: "tab_principal", text: "Principal", active: true,   items: [
+	
+	    
+		 {id: "blockprin_opc1", type: "block", text: "Sistema de Información (SIP)", text_pos: 'top',  list: [
+		     {id: "openprin_oplogo", type: "button",   isbig: true, img: "48/logo_cotac2019.png"},
+			 {id: "openprin_opnom", type:"text", text:"<br><font face='Monotype Corsiva' size='5'>Gestión Documental</font>"},
+		]},
+		
+		{id: "blockprin_opc7", type: "block", text: "Tramites", list: [
+		    {id: "openprin_userventanilla", type: "button", text: "Ventanilla",  isbig: true, img: "48/iconbig_ventanilla.png"},
+			{id: "openprin_usventformulars", type: "button", text: "Formularios",  isbig: true, img: "48/tareasicon.png"},
+		]},
+		 
+	    
+		{id: "blockprin_opc3", type: "block", text: "Busqueda por Fecha", list: [
+		    {id: "openprin_label1", type: "button", text: "Ver Fecha", img: ""},
+			{id: "opentxt_fechabusq", type: "input",  "width": 70 },
+			{id: "openprin_btn2", type: "button", text: "Click Buscar", img: "18/btn_busqfech.png"},
+		]},
+		{id: "blockprin_opc4", type: "block", text: "Busqueda Rango Fechas", list: [
+			{id: "openprin_label2", type: "button", text: "Seleccione Rango", img: ""},
+			{id: "opentxt_fechabusqini", type: "input", text: "Desde", "width": 70 },
+			{id: "opentxt_fechabusqfin", type: "input", text: "Hasta", "width": 70 },
+			{id: "openprin_btn3", type: "button", text: "Click Buscar", isbig: true, img: "48/btn_busqrangofechas.png"},
+		]},
+		{id: "blockprin_opc5", type: "block", text: "Busqueda de Tramites", list: [
+			{id: "openprin_label3", type: "button", text: "Seleccione Campo", img: "18/label_camp.png"},
+			//{id: "open_busq3ini", type: "input", text: "", "width": 130 },
+			
+			
+			{type:'buttonCombo', id: 'combocampos',  items: [
+						{value: "999", text: "Seleccione Campo...", selected: true},
+						{value: "form_cod_barras", text: "Codigo de Barras"},
+						{value: "origen_tipo_tramite", text: "Tipo Tramite"},
+						{value: "origen_tipo_doc", text: "Tipo Documento"},
+						{value: "form_asunto", text: "Solicitud"},
+						{value: "cedula", text: "Ciudadano Cedula"},
+						{value: "ciud_apellidos", text: "Ciudadano Apellidos"},
+						{value: "ciud_nombres", text: "Ciudadano Nombres"},
+						{value: "origen_nro_documento", text: "Nro_Documento"},
+						
+					]},
+			
+			
+			{id: "open_busqxcamp", type: "input", text: "", "width": 130 },
+			{id: "openprin_btn4", type: "button", text: "Click Buscar", isbig: true, img: "48/buscar.png"},
+		]},
+		{id: "blockprin_opc2", type: "block", text: "Pantalla", list: [
+			{id: "openprin_btn1", type: "button", text: "Principal", isbig: true, img: "48/iconbig_principal.png"},
+		]},
+		{id: "blockprin_opc6", type: "block", text: "Sistema", list: [
+		   // {id: "openprin_usermifoto", type: "button", text: "Usuario",  isbig: true, img: "48/sinfoto.png"},
+			{id: "openprin_usermiperfil", type: "button", text: "Cambiar Clave", isbig: true, img: "48/iconbig_miperfil.png"},
+			//{id: "openprin_usermiayuda", type: "button", text: "Ayuda", isbig: true, img: "48/iconbig_ayuda.png"},
+			{id: "openprin_usermisalir", type: "button", text: "Salir", isbig: true, img: "48/iconbig_salir.png"},
+			
+		]},
+		{id: "block_opcocult", type: "block", text: "Menu", list: [
+			{id: "openprin_ocultamenu", type: "button", text: "Ocultar", isbig: true, img: "48/iconbig_ocultar.png"},
+		]},
+		
+		/*
+		{id: "blockprin_opc7", type: "block", text: "Sesion abierta", list: [
+		    {id: "openprin_usermifoto", type: "button", text: "Usuario",  isbig: true, img: "48/sinfoto.png"},
+		]}
+		*/
+		
+		
+	]},
+	{id: "tab_gestdocsreport", text: "Reportes y Estadisticas", active: false, items: [
+		{id: "block_report1", type: "block", text: "Gestion de Reportes y Estadisticas", list: [
+			{id: "open_report1", type: "button", text: "Tipo de Trámite", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report3", type: "button", text: "Por Servicio", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report4", type: "button", text: "Por Departamento", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report5", type: "button", text: "Por Medicion Atencion", isbig: true, img: "48/btn_img_reportes.png"},
+			{id: "open_report2", type: "button", text: "Ubicación", isbig: true, img: "48/ubicaciontbn.png"},
+			//{id: "open_report3", type: "button", text: "Por Estanteria", isbig: true, img: "48/btn_img_reportes.png"},
+			//{id: "open_report4", type: "button", text: "Por Nivel", isbig: true, img: "48/btn_img_reportes.png"},
+			//{id: "open_report5", type: "button", text: "Por Categoria", isbig: true, img: "48/btn_img_reportes.png"},
+			//{id: "open_report6", type: "button", text: "Por Documento", isbig: true, img: "48/btn_img_reportes.png"},
+			//{id: "open_report7", type: "button", text: "Crear Mis Reportes", isbig: true, img: "48/btn_img_misreportes.png"},
+			//{id: "open_report8", type: "button", text: "Codificacion General", isbig: true, img: "48/btn_img_impresionlist.png"},
+			//{id: "open_report10", type: "button", text: "Codif. Grupos", isbig: true, img: "48/btn_img_impresionlist.png"},
+			//{id: "open_report11", type: "button", text: "Codif. Categorias", isbig: true, img: "48/btn_img_impresionlist.png"},
+			//{id: "open_reportbigop1", type: "button", text: "Grupos QR", isbig: true, img: "48/btn_img_impresionlist.png"},
+			//{id: "open_reportbigop2", type: "button", text: "Categorias QR", isbig: true, img: "48/btn_img_impresionlist.png"},
+			{id: "open_report9", type: "button", text: "Reporte Contadores", isbig: true, img: "48/planificdo.png"},
+		]},
+		
+	]}
+	
+	
+]};
