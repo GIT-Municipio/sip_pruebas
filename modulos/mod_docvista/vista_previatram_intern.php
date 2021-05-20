@@ -346,7 +346,7 @@ $verimgqrdado = "../../../sip_bodega/codqr/" . pg_fetch_result($resxpresdocum, 0
 	<script>
 		function abrirSeguimiento() {
 			var miPopupmapaobjtabauxgrf;
-			miPopupmapaobjtabauxgrf = window.open("http://172.16.3.35:4200/arbol-tramite-sip?tramite=" + <?php echo $_GET["varcodgenerado"]; ?>, "moswinform", "width=950,height=900,scrollbars=no,left=400");
+			miPopupmapaobjtabauxgrf = window.open("http://172.16.3.35:8085/arbol-tramite-sip?tramite=" + <?php echo $_GET["varcodgenerado"]; ?>, "moswinform", "width=950,height=900,scrollbars=no,left=400");
 			miPopupmapaobjtabauxgrf.focus();
 		}
 	</script>
@@ -370,7 +370,7 @@ $verimgqrdado = "../../../sip_bodega/codqr/" . pg_fetch_result($resxpresdocum, 0
 							<?php if ($_SESSION['vermientipologusu'] == "1" or $_SESSION['vermientipologusu'] == "2") { ?>
 								<td width="66" align="center"><a href="#" onClick="btn_elimarinfodoc()"><img src="imgs/menu_sup/eliminar.gif" width="66" height="51"></a></td>
 								<td width="66" align="center"><a href="#" onClick="btn_reasignarinfodoc()"><img src="imgs/menu_sup/reasignar.gif" width="66" height="51"></a></td>
-							<?php } ?>
+							<?php } ?> 
 							<td width="66" align="center"><a href="#" onClick="btn_archivarinfodoc()"><img src="imgs/menu_sup/archivar.gif" width="66" height="51"></a></td>
 							<td width="66" align="center"><a href="#" onClick="btn_informarinfodoc()"><img src="imgs/menu_sup/informar.gif" width="66" height="51"></a></td>
 

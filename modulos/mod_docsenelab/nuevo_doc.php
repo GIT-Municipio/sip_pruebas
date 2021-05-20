@@ -16,7 +16,8 @@ $numerdedatos = "";
 $elsubcamponombre = "";
 $_SESSION["mvpr"] = "999";
 $_SESSION['cedula_destinatario'] = "1002813424";
-$bandera = $_GET['bandera'];
+
+//$bandera = $_GET['bandera']; ??no llama de ningun lado
 //////////seleccionar tabla///
 
 $cedula = $_SESSION['sesusuario_cedula'];
@@ -192,7 +193,7 @@ $camposver = strtoupper($camposver);
 	<!-- <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script> -->
 	<!-- <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script> -->
 	<script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/decoupled-document/ckeditor.js"></script>
-	<script src="codebase/dhtmlxgridcell.js"></script>
+	<script src="http://localhost/sip_pruebas/componentes/codebase/dhtmlxgridcell.js"></script>
 
 	<script type="text/javascript">
 		var myLayout, myAcc, myForm, formData, myDataProcessor, mygrid, dhxWinsusus;
@@ -497,7 +498,7 @@ $camposver = strtoupper($camposver);
 				}]
 			});
 			myLayout.cells("a").hideHeader();
-			mygrid = new dhtmlXGridObject('gridbox');
+			mygrid = new dhtmlXLayoutObject('gridbox');
 			mygrid = myLayout.cells("a").attachGrid();
 			mygrid.setImagePath("../../componentes/codebase/imgs/");
 			mygrid.setHeader("ID, CEDULA, NOMBRES, APELLIDOS, EMAIL, CARGO, DEPENDENCIA, TITULO,DE");
