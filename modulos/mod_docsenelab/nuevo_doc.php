@@ -188,12 +188,13 @@ $camposver = strtoupper($camposver);
 	<link rel="stylesheet" type="text/css" href="../../componentes/codebase/dhtmlx.css" />
 	<link rel="stylesheet" type="text/css" href="estilo/estil.css" />
 	<script src="../../componentes/codebase/dhtmlx.js"></script>
-	<script src="../../componentes/codebase/ext/dhtmlxgrid_group.js"></script>
+	<!--<script src="../../componentes/codebase/ext/dhtmlxgrid_group.js"></script>-->
 	<script src="estilo/event.js"></script>
 	<!-- <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script> -->
 	<!-- <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script> -->
 	<script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/decoupled-document/ckeditor.js"></script>
-	<script src="http://localhost/sip_pruebas/componentes/codebase/dhtmlxgridcell.js"></script>
+	<!--<script src="../componentes/codebase/dhtmlxgrid.js"></script>-->
+
 
 	<script type="text/javascript">
 		var myLayout, myAcc, myForm, formData, myDataProcessor, mygrid, dhxWinsusus;
@@ -751,7 +752,9 @@ $camposver = strtoupper($camposver);
 									for ($i = 0; $i < pg_num_rows($restipdoc); $i++) {
 										echo '<option value="' . pg_fetch_result($restipdoc, $i, 'documento') . '">' . pg_fetch_result($restipdoc, $i, 'documento') . '</option>';
 									}
-									$sqllosreqcc = "select id from tbli_esq_plant_form_cuadro_clasif where ref_id_proceso='" . $_GET["mvpr"] . "'";
+
+									//REVISAR CONSULTAS EN QUE AFECTA POR CE
+									/*$sqllosreqcc = "select id from tbli_esq_plant_form_cuadro_clasif where ref_id_proceso='" .$_GET["mvpr"]."'";
 									$consveresquscc = pg_query($conn, $sqllosreqcc);
 									$codcuad = pg_fetch_result($consveresquscc, 0, "id");
 
@@ -763,11 +766,12 @@ $camposver = strtoupper($camposver);
 										$consveresquscc = pg_query($conn, $sqllosreqcc);
 										$codplantilla = pg_fetch_result($consveresquscc, 0, "id");
 										echo  '<tr>
-	<td valign="bottom" bgcolor="#525659" align="center"><a href="../mod_forms/form_vista.php?rp=' . $codplantilla . '"><img src="images/form_btnformu.png" width="202" height="44" /></a></td>
-	</tr>';
-									}
+										<td valign="bottom" bgcolor="#525659" align="center"><a href="../mod_forms/form_vista.php?rp=' . $codplantilla . '"><img src="images/form_btnformu.png" width="202" height="44" /></a></td>
+										</tr>';
+									}*/
 									?>
-								</select></td>
+								</select>
+							</td>
 							<td width="395">
 								<table width="294" border="0" align="center">
 									<tr>
