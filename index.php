@@ -24,10 +24,10 @@ if (isset($_SESSION['sesusuario_idprinusu']) == "") {
 
 	<link rel="stylesheet" type="text/css" href="dhtmlx51/codebase/dhtmlx.css" />
 
-     <link rel="stylesheet" type="text/css" href="dhtmlx51/skins/web/dhtmlx.css"/>
-	<link rel="stylesheet" type="text/css" href="dhtmlx51/skins/terrace/dhtmlx.css"/>
-	<link rel="stylesheet" type="text/css" href="dhtmlx51/skins/skyblue/dhtmlx.css"/>
-	<link rel="stylesheet" type="text/css" href="dhtmlx51/codebase/dhtmlx.css"/>
+	<link rel="stylesheet" type="text/css" href="dhtmlx51/skins/web/dhtmlx.css" />
+	<link rel="stylesheet" type="text/css" href="dhtmlx51/skins/terrace/dhtmlx.css" />
+	<link rel="stylesheet" type="text/css" href="dhtmlx51/skins/skyblue/dhtmlx.css" />
+	<link rel="stylesheet" type="text/css" href="dhtmlx51/codebase/dhtmlx.css" />
 
 	<script src="dhtmlx51/codebase/dhtmlx.js"></script>
 	<!--
@@ -45,7 +45,7 @@ if (isset($_SESSION['sesusuario_idprinusu']) == "") {
 			margin: 0px;
 			padding: 0px;
 			/* background-color: #dce7fa; -- cambio de color hex a rgb por CE*/
-			background-color:  rgb(0, 182, 255);
+			background-color: rgb(0, 182, 255);
 			overflow: hidden;
 			font-family: verdana, arial, helvetica, sans-serif;
 		}
@@ -346,7 +346,7 @@ if (isset($_SESSION['sesusuario_idprinusu']) == "") {
 					w1 = dhxWins.createWindow("w1", 230, 10, 950, 630);
 					w1.setText("Nuevo Formulario Planificación");
 					w1.button("minmax").disable();
-					w1.attachURL("modulos/mod_docsenelab/nuevo_form_externo.php?retornmiusuarioseguim=<?php echo $_SESSION['sesusuario_cedula']; ?>");//referencia a pagina a mostar en la ventana por CE
+					w1.attachURL("modulos/mod_docsenelab/nuevo_form_externo.php?retornmiusuarioseguim=<?php echo $_SESSION['sesusuario_cedula']; ?>"); //referencia a pagina a mostar en la ventana por CE
 					w1.setModal(true); ////sirve para bloquear la pantalla para quitar simplemente se pone false
 				}
 				if (id == "openform_compras") {
@@ -354,7 +354,7 @@ if (isset($_SESSION['sesusuario_idprinusu']) == "") {
 					w1 = dhxWins.createWindow("w1", 230, 10, 950, 430);
 					w1.setText("Nuevo Formulario Compras Públicas");
 					w1.button("minmax").disable();
-					w1.attachURL("modulos/mod_docsenelab/nuevo_form_compras.php?retornmiusuarioseguim=<?php echo $_SESSION['sesusuario_cedula']; ?>");//referencia a pagina a mostar en la ventana por CE
+					w1.attachURL("modulos/mod_docsenelab/nuevo_form_compras.php?retornmiusuarioseguim=<?php echo $_SESSION['sesusuario_cedula']; ?>"); //referencia a pagina a mostar en la ventana por CE
 					w1.setModal(true); ////sirve para bloquear la pantalla para quitar simplemente se pone false
 				}
 			});
