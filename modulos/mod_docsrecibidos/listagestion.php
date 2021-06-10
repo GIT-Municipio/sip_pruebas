@@ -32,7 +32,9 @@
 
 	/////////////////TODOS LOS CAMPOS
 	//$campostodos="id,codi_barras,selec_tempoitem,img_bandera_tatencion, destino_fecha_creado, destino_tipo_tramite,destino_tipodoc,destino_form_asunto,  origen,  destino,respuesta_comentariotxt,respuesta_observacion, destino_cedul";
-	$campostodos = "id,codi_barras, num_memocreado AS TRAMITE,codigo_tramite,codigo_documento, destino_fecha_creado as FECHA, destino_tipo_tramite as tipo_tramite,destino_fecha_creado as RECIBIDO,origen,usuario_cedseguim,origen_cedul,origen_nombres,origen_form_asunto as asunto,respuesta_comentariotxt as comentario,origen_tipo_tramite, destino_cedul,resp_estado_anterior as tipo, est_respuesta_reasignado,est_respuesta_enviado,est_respuesta_informado,est_respuesta_enedicion,ref_plantilla,ref_tramwebid,origen_tipodoc";
+	$campostodos = "id,codi_barras,codigo_tramite,codigo_documento, destino_fecha_creado as FECHA, destino_tipo_tramite as tipo_tramite,destino_fecha_creado as RECIBIDO,origen,usuario_cedseguim,origen_cedul,origen_nombres,origen_form_asunto as asunto,respuesta_comentariotxt as comentario,origen_tipo_tramite, destino_cedul,resp_estado_anterior as tipo, est_respuesta_reasignado,est_respuesta_enviado,est_respuesta_informado,est_respuesta_enedicion,ref_plantilla,ref_tramwebid,origen_tipodoc";
+
+	// ---- La anterior sentencia es para campos a mostrar en grid view de la pagina principal en la bandeja recividos por CE ----//
 
 	////////////////CAMPOS OCULTOS////////////
 	//$camposocultos="id,destino_cedul,codigo_tramite,respuesta_estado,est_respuesta_reasignado,est_respuesta_enviado";
@@ -669,7 +671,7 @@
 									echo "	        locked: true," . "\n";
 									echo "			renderer : cambiacoloralestadotiempo,";
 									// echo "renderer: function(value){return " . "'" . "<img src=" . 'imgs/bander_alertalto.png' . " /> ';}";
-								}
+								} 
 
 								if ($nombrecamp == "img_bandera_tatencion")
 									echo "renderer: function(value){return " . "'" . "<img src=" . "'+value+'" . " />';}";
@@ -711,6 +713,8 @@
  					/////////////////////ACCIONES DE GRID////////////////////////////////////
  					{
  						xtype: 'actioncolumn',
+
+
  						<?php if ($_SESSION['sesusuario_usutipo_rol'] == "1" or $_SESSION['sesusuario_usutipo_rol'] == "2") { ?>
  							width: 180,
  						<?php } else { ?>
@@ -735,7 +739,7 @@
  							// },
  							{
  								tooltip: 'Visualizar Datos',
- 								iconCls: 'vistafichaicon', ///otra manera de poner icono con css
+ 								iconCls: 'vistafichaicon', ///otra manera de| poner icono con css
  								handler: function(grid, rowIndex, colIndex) {
  									var employee = grid.getStore().getAt(rowIndex);
  									var ponidver = employee.get('id');
@@ -992,7 +996,7 @@
  				<?php if ($param_configrup == "1") { ?>
  					features: [filters, groupingFeature], //filtrado y agrupamiento simple
  				<?php }  ?>
- 				 columnLines: true,
+ 				  
  				loadMask: false,
 
  				columns: createColumns(<?php echo $numercampos +5; ?>),
@@ -1066,7 +1070,8 @@
  				emptyText: 'No hay registros', /////esto aumente
  				// plugins: [cellEditing], ////ESTE ES USA FUNCIONAL para editar solo una celda
  				/////////////////////ver los ttolbars
- 				width: '100%',
+ 				// ---- cambiar tan año de la seccion recibidos --- por CE
+				 width: '100%',
  				height: '100%',
  				title: 'Gestion de Informacion',
  				header: false,
@@ -1079,6 +1084,7 @@
  			// add some buttons to bottom toolbar just for demonstration purposes
  			grid.child('pagingtoolbar').add([
  				'->',
+				
  			]);
 
  			/////////////////fin otro aumento para edicion

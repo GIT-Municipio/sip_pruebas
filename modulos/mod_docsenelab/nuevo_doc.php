@@ -185,8 +185,8 @@ $camposver = strtoupper($camposver);
 <head>
     <title>Informacion Alfanumerica</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" type="text/css" href="../../componentes/codebase/dhtmlx.css" />
-	<link rel="stylesheet" type="text/css" href="../../componentes/codebase/dhtmlxgrid.css" />
+    <link rel="stylesheet" type="text/css" href="../../componentes/codebase/dhtmlx.css" />
+    <link rel="stylesheet" type="text/css" href="../../componentes/codebase/dhtmlxgrid.css" />
 
     <!-- <link rel="stylesheet" type="text/css" href="estilo/estil.css" /> -->
     <script src="../../componentes/codebase/dhtmlx.js"></script>
@@ -522,13 +522,13 @@ $camposver = strtoupper($camposver);
         });
         myLayout.cells("a").hideHeader();
         mygrid = new dhtmlXLayoutObject("gridbox");
-        mygrid = myLayout.cells("a").attachGrid();	
+        mygrid = myLayout.cells("a").attachGrid();
         mygrid.setImagePath("../../componentes/codebase/imgs/");
         mygrid.setHeader("ID, CEDULA, NOMBRES, APELLIDOS, EMAIL, CARGO, DEPENDENCIA, TITULO,DE");
         mygrid.setInitWidths("1,1,210,210,1,230,200,1,1");
         mygrid.setColAlign("left,left,left,left,left,left,center, center,center");
         mygrid.setColTypes("ro,ro,ro,ed,ed,ro,ro,ro,ro");
-        mygrid.setSkin("dhx_skyblue");         //------------skin de la tabla dado por DHTMLX por CE
+        mygrid.setSkin("dhx_web"); //------------skin de la tabla dado por DHTMLX por CE
         mygrid.enableEditEvents(false, false, false);
         mygrid.setColSorting("<?php echo $tipcamposorden; ?>");
         mygrid.setColumnColor("white,#d5f1ff,#d5f1ff,#d5f1ff,,,#d5f1ff");
@@ -762,9 +762,9 @@ $camposver = strtoupper($camposver);
 			?>
         </table>
 
-		<!-- Estilo de la ventana posicion relativa de la segunda seccion por que Layout DHTMLX solo configurado en C1 -->
+        <!-- Estilo de la ventana posicion relativa de la segunda seccion por que Layout DHTMLX solo configurado en C1 -->
         <div id="layoutObj" style="width:100%;height:140px;overflow:scroll"></div>
-        <div id="gridbox" style="width:auto; position: absolute" ></div>
+        <div id="gridbox" style="width:auto; position: absolute"></div>
 
         <div id="contenidodelmemo">
             <input type="hidden" id="variabtrami" name="variabtrami"
