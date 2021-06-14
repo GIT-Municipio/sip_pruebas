@@ -3,12 +3,12 @@
 require_once('../../clases/conexion.php');
 session_start();
 //-------------------------------
-header("Refresh: 20");
+header("Refresh: 1210");
 //Comprobamos si esta definida la sesión 'tiempo'.
 if (isset($_SESSION['tiempo'])) {
 
 	//Tiempo en segundos para dar vida a la sesión.
-	$inactivo = 10; //20min.
+	$inactivo = 1200; //20min.
 
 	//Calculamos tiempo de vida inactivo.
 	$vida_session = time() - $_SESSION['tiempo'];
@@ -29,12 +29,12 @@ $_SESSION['tiempo'] = time();
 
 //session_start();
 //-------------------------------
-header("Refresh: 20");
+header("Refresh: 1210");
 //Comprobamos si esta definida la sesión 'tiempo'.
 if (isset($_SESSION['tiempo'])) {
 
 	//Tiempo en segundos para dar vida a la sesión.
-	$inactivo = 10; //20min.
+	$inactivo = 1200; //20min.
 
 	//Calculamos tiempo de vida inactivo.
 	$vida_session = time() - $_SESSION['tiempo'];
