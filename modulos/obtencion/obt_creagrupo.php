@@ -101,6 +101,30 @@ $mensaje="";
 		$codigofinaldegrupscaja=$darnombregruppo.$darmecodginumbergrop;
          
          session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 		 $sqlus="INSERT INTO public.tbl_grupo_archivos(grup_nombre,grup_codigointer,grup_codigointerorden,  gparam_departamento, gparam_cod_categoria,gparam_nom_categoria, gparam_bodega, gparam_estanteria, gparam_nivel,gterminal_usu,gparam_lista_categorias,gusu_respons_edit,gparam_cod_subcategoria,gparam_nom_subcategoria) VALUES ('".$codigofinaldegrupscaja."','".$darnombregruppo."','".$darmecodginumbergrop."','".$_REQUEST["gparam_departamento"]."','".$vafcodicatego."','".$_REQUEST["gparam_nom_categoria"]."','".$_REQUEST["gparam_bodega"]."','".$_REQUEST["gparam_estanteria"]."','".$_REQUEST["gparam_nivel"]."','".$_REQUEST["gterminal_usu"]."','".$_REQUEST["gparam_nom_categoria"]."','".$_SESSION["ses_usuarionom"]."','".$vafcodisubcatego."','".$_REQUEST["gparam_nom_subcategoria"]."') ";
 		$result=pg_query($conn, $sqlus);
 		

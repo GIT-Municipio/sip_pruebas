@@ -4,6 +4,30 @@ require_once('../../clases/conexion.php');
 
 
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 
 $query = "SELECT id, ' Usuario: '||origen_nombres||' Asunto: '||origen_form_asunto as detalle, origen_fecha_creado as fecha,hora_ingreso, respuesta_estado as estado, destino_nombres,destino_cargo,origen_tipodoc,respuesta_observacion,respuesta_comentariotxt,fech_tiempo_dias,fecha_tiempo_atencion,resp_comentario_anterior  FROM public.tbli_esq_plant_formunico_docsinternos WHERE codi_barras='".$_GET['enviocodbarr']."' ";
 

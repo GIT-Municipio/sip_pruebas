@@ -19,6 +19,30 @@
 
 $ruta_raiz = "..";
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 include_once "$ruta_raiz/rec_session.php";
 if (isset ($replicacion) && $replicacion && $config_db_replica_buscar_usuario_nuevo!="") $db = new ConnectionHandler($ruta_raiz,$config_db_replica_buscar_usuario_nuevo);
 

@@ -7,6 +7,30 @@ $totalfil=$_GET["vafil"];
 if($totalfil!=0)
 {
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 		
 /*
 $sql = "UPDATE public.tbl_archivos_procesados    SET   est_validado=0, est_activo=0, est_eliminado=1,  est_enprestamo=0, est_oficina=0, est_general=0, est_pasivo=0, est_historico=0, est_digital=0, 

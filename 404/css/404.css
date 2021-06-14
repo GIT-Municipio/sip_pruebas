@@ -41,7 +41,7 @@ body {
   font-size: 236px;
   font-weight: 200;
   margin: 0px;
-  color: #211b19;
+  color: rgb(0, 130, 255);
   text-transform: uppercase;
   position: absolute;
   left: 50%;
@@ -75,15 +75,15 @@ body {
   color: #fff;
   text-transform: uppercase;
   padding: 13px 23px;
-  background: #ff6300;
+  background: rgb(0, 130, 255);
   font-size: 18px;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
 .notfound a:hover {
-  color: #ff6300;
-  background: #211b19;
+  color: black;
+  background: rgb(0, 182, 255);
 }
 
 @media only screen and (max-width: 767px) {

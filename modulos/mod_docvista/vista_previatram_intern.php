@@ -2,6 +2,30 @@
 require_once('../../clases/conexion.php');
 include('phpqrcode/qrlib.php');
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 
 $sql = "SELECT inst_ruc, inst_nombre, inst_logo, inst_email,  inst_logo_docs, inst_bannersup_docs, inst_bannerinf_docs, inst_fondomarcaguaborr_docs, inst_fondomarcaguaorig_docs, inst_mensaje_slogan_docs FROM public.institucion where inst_ruc='1060000420001';";
 $resxpres = pg_query($conn, $sql);

@@ -2,6 +2,30 @@
 
 require_once('../../clases/conexion.php');
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesión 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesión.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraración para redirigir página, si la vida de sesión sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesión.
+		session_unset();
+		//Destruimos sesión.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 
 $latabla='tbli_esq_plant_formunico'; 
 $sql = "SELECT id,form_cod_barras,date(fecha) as fecha,form_hora_ingreso,origen_tipo_tramite,origen_tipo_doc,form_asunto, cedula, ciud_nombres, ciud_apellidos,  origen_nro_documento, origen_institucion, origen_urbano_rural,origen_id_tipo_tramite,observacion,sumillado_a_responsables,estado_gestor, img_anexoficio, img_sumillaestado,codigo_tramite,sumillado_a_departamentos  FROM tbli_esq_plant_formunico order by id;";

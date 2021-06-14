@@ -4,6 +4,30 @@ require_once('../../clases/conexion.php');
 
 
 session_start();
+//-------------------------------
+header("Refresh: 20");
+//Comprobamos si esta definida la sesi贸n 'tiempo'.
+if (isset($_SESSION['tiempo'])) {
+
+	//Tiempo en segundos para dar vida a la sesi贸n.
+	$inactivo = 10; //20min.
+
+	//Calculamos tiempo de vida inactivo.
+	$vida_session = time() - $_SESSION['tiempo'];
+
+	//Compraraci贸n para redirigir p谩gina, si la vida de sesi贸n sea mayor a el tiempo insertado en inactivo.
+	if ($vida_session > $inactivo) {
+		//Removemos sesi贸n.
+		session_unset();
+		//Destruimos sesi贸n.
+		session_destroy();
+		//Redirigimos pagina.
+		header("location: http://localhost/sip_pruebas/404/404.html");
+		exit();
+	}
+}
+$_SESSION['tiempo'] = time();
+//---------------------
 
 $query = $_SESSION['miconsultaparaexcel'];
 $consulta = pg_query($conn,$query);
@@ -28,15 +52,15 @@ $pdf->Ln();
 
 
 //$micamp[]="ID";
-//T韙ulos de las columnas
+//T锟絫ulos de las columnas
  for($i=0;$i<pg_num_fields($consulta);$i++)
 {
 	$micamp[]=pg_field_name($consulta,$i);
  }
 
-$header=$micamp;//array('Cod.','Nombre y apellidos','Localidad','Provincia','Telf.','M髒il');
+$header=$micamp;//array('Cod.','Nombre y apellidos','Localidad','Provincia','Telf.','M锟絭il');
 
-//Colores, ancho de l韓ea y fuente en negrita
+//Colores, ancho de l锟絥ea y fuente en negrita
     $pdf->SetFillColor(200,200,200);
     $pdf->SetTextColor(0);
     $pdf->SetDrawColor(0,0,0);
@@ -77,7 +101,7 @@ $header=$micamp;//array('Cod.','Nombre y apellidos','Localidad','Provincia','Tel
         $pdf->Cell($w[$i],7,$header[$i],1,0,'C',1);
     $pdf->Ln();
 	
-//Restauraci髇 de colores y fuentes
+//Restauraci锟絥 de colores y fuentes
 
     $pdf->SetFillColor(224,235,255);
     $pdf->SetTextColor(0);
